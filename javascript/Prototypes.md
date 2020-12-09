@@ -29,15 +29,13 @@ So what to do if we want to add new properties at later stage to a function whic
 
 The answer is **Prototype**.
 
-The prototype is an object that is associated with every functions and objects by default in JavaScript, where function's prototype property is accessible and modifiable and object's prototype property (aka attribute) is not visible.
+The *prototype* is an object that is associated with every function and object by default in JavaScript, where function's prototype property is accessible and modifiable and object's prototype property (aka attribute) is not visible.
 
 Every function includes prototype object by default.
 
 ![Prototype in JavaScript](/images/prototype-1.png "Prototype in JavaScript")
 
-
-
-Prototype in JavaScript
+            Prototype in JavaScript
 
 The prototype object is special type of enumerable object to which additional properties can be attached to it which will be shared across all the instances of it's constructor function.
 
