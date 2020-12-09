@@ -201,3 +201,4 @@ This way, prototype is useful in keeping only one copy of functions for all the 
 
 The following figure illustrates the above scenario.
 
+![Prototype in JavaScript](/images/prototype-3.png "Prototype in JavaScript")
