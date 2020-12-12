@@ -59,7 +59,7 @@ alert(studObj2.age); // 15
 ```
 
 
-Every object which is created using literal syntax or constructor syntax with the new keyword, includes `__proto__` property that points to prototype object of a function that created this object.
+ - **Every object which is created using literal syntax or constructor syntax with the new keyword, includes `__proto__` property that points to prototype object of a function that created this object.**
 
 ![Prototype in JavaScript](/images/prototype-2.png "Prototype in JavaScript")
 
@@ -94,7 +94,7 @@ As you can see in the above example, Function's prototype property can be access
 Object's Prototype
 ------------------
 
-As mentioned before, object's prototype property is invisible. Use `Object.getPrototypeOf(obj)` method instead of `__proto__` to access prototype object.
+As mentioned before, object's prototype property is invisible. **Use `Object.getPrototypeOf(obj)` method instead of `__proto__` to access prototype object**.
 
 Example: Object's prototype
 
@@ -200,3 +200,13 @@ This way, prototype is useful in keeping only one copy of functions for all the 
 The following figure illustrates the above scenario.
 
 ![Prototype in JavaScript](/images/prototype-3.png "Prototype in JavaScript")
+
+## Inheritance 
+
+When it comes to inheritance, JavaScript only has one construct - Objects. Each object has a private property called `__proto__` which holds a link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype. By definition, null has no prototype, and acts as the final link in this prototype chain.
+
+Nearly all objects in JavaScript are instances of Object which sits on the top of a prototype chain.
+
+In order to get the Prototype of an object we use the method -
+
+`Object.getPrototypeOf(<object>)`
