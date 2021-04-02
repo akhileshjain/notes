@@ -74,9 +74,9 @@ The following example demonstrates the call() & apply().
             alert(this.myVar);
         }
 
-        var obj1 = { myVar : 200 , whoIsThis: WhoIsThis };
+        var obj1 = { myVar : 200 , test: WhoIsThis };
 
-        var obj2 = { myVar : 300 , whoIsThis: WhoIsThis };
+        var obj2 = { myVar : 300 , test: WhoIsThis };
 
         WhoIsThis(); // 'this' will point to window object
 
